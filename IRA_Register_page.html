@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRA Registration Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="IRA_Register_page.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>IRA Registration Form</h1>
+            <a href="Dashboard.html" class="back-icon"><span class="material-icons">arrow_circle_left</span></a>
+        </div>
+        <p class="note">*Each team member must individually participate in the IRA*</p>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="eventName">Event Name</label>
+                    <input type="text" id="eventName" name="eventName" placeholder="Enter the Event Name">
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" name="eventDate" placeholder="Enter the Event Date">
+                </div>
+                <div class="form-group">
+                    <label for="psScreenshot">PS Level Cleared</label>
+                    <input type="text" id="psScreenshot" name="psScreenshot" placeholder="1">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="competitionName">Competition Name</label>
+                    <input type="text" id="competitionName" name="competitionName" placeholder="Enter the Competition Name">
+                </div>
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="studentRollNo">Student Roll NO</label>
+                    <input type="text" id="studentRollNo" name="studentRollNo" placeholder="Enter your Roll No">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="studentDepartment">Student Department</label>
+                    <input type="text" id="studentDepartment" name="studentDepartment" placeholder="Enter your Department">
+                </div>
+                <div class="form-group">
+                    <label for="studentMailId">Student Mail id</label>
+                    <input type="email" id="studentMailId" name="studentMailId" placeholder="Enter your Mail id">
+                </div>
+                <div class="form-group">
+                    <label for="studentYearOfStudy">Student Year of study</label>
+                    <input type="text" id="studentYearOfStudy" name="studentYearOfStudy" placeholder="Year">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" class="cancel-button">Cancel</button>
+                <button type="submit" class="register-button">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="Requisition_form.css">
+</head>
+<body>
+    <div class="R_main">
+        <div class="R_head">
+            Requisition Form
+            <a href="Dashboard.html" style="text-decoration: none; color: black;"><span id="back" class="material-icons">arrow_circle_left</span></a>
+        </div>
+        <hr>
+        <div class="form-details">
+            <form action="Status_page.html">
+            <div class="row">
+                <label for="text">Event Name</label>
+                <input type="text" name="Event Name" id="text" placeholder="Enter the Event Name" required>
+                <label for="date">Event Date</label>
+                <input type="date" name="Event Date" id="date">
+                <label class="reg" for="reg">Registration Deadline</label>
+                <input type="date" name="Registration Deadline" id="reg">
+            </div>
+            <div class="row">
+                <label for="org">Event Organizer</label>
+                <input type="text" name="Event Organizer" id="org" placeholder="Enter Event's Organizer">
+                <label for="dom">Domain</label>
+                <input type="text" name="Domain" id="dom" placeholder="Event's Domain">
+                <label for="E_type">Event Type</label>
+                <input type="text" name="Event Type" id="E_type" placeholder="Type of the Event">
+            </div>
+            <div class="row">
+                <label for="E_cat">Event Category</label>
+                <input type="text" name="Event Category" id="E_cat" placeholder="Mention the Category of the Event">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="">Select State</option>
+                </select>
+                <label for="district">District</label>
+                <select name="district" id="district">
+                    <option value="">Select District</option>
+                </select>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="">Select City</option>
+                </select>
+            </div>
+            <div class="row">
+                
+                <label for="C_name">Competition Name</label>
+                <input type="text" name="Competition Name" id="C_name" placeholder="Mention the Competition Name">
+                <label for="bro">Brochure Details</label>
+                <input type="file" name="Brochure Details" id="bro">
+                <label for="Applicant">Applied By</label>
+                <input type="text" name="Applied By" id="Applicant" placeholder="Student/Faculty">
+            </div>
+            <div class="row">
+                <label for="A_N">Applicant Name</label>
+                <input type="text" name="A_Name" id="A_N" placeholder="Student/Faculty Name">
+                <label for="A_R">Applicant Reg_No/Id</label>
+                <input type="text" name="A_Roll" id="A_R" placeholder="Enter your Register No/Id">
+                <label for="A_D">Applicant Department</label>
+                <input type="text" name="A_dpt" id="A_D" placeholder="Enter your Department">
+            </div>
+            <div class="row">
+                <label for="year">Year/Role</label>
+                <input type="text" name="Year" id="year" placeholder="Year of Study/Your Role">
+                <label for="mail">Applicant Mail id</label>
+                <input type="email" name="mail" id="mail" placeholder="Enter your Mail-id">
+                <label for="phone">Ph No</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter your Mobile No">
+            </div>
+            <div class="row">
+                <label for="phone">Special Lab Name</label>
+                <input type="text" name="spl_name" id="S_N" placeholder="Enter your Spcial Lab Name">
+                <label for="phone">Special Lab Id</label>
+                <input type="text" name="spl_id" id="S_Id" placeholder="Enter your Special Lab ID">
+                <label for="phone">Special Lab Incharge</label>
+                <input type="text" name="spl_in" id="S_Incharge" placeholder="Enter your Special Lab Incharge Name">
+            </div>
+            <div class="footer">
+                <input type="reset" value="Cancel" id="cancel" style="background: #FF6363; border: none; border-radius: 5px;color: white; width: 105px; height: 40px;font-size: 20px; margin-left: 95px; margin-top: -13px;">
+                <input type="submit" value="Add" id="add" style="background: #148AE4; border: none; border-radius: 5px; color: white; width: 105px; height: 40px; font-size: 20px; float: right; margin-top: -13px;">
+            </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
