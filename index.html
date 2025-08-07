@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Portal - GitHub Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .credentials {
+            background: #f8fafc;
+            border-left: 4px solid #4f46e5;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+        
+        .credentials h4 {
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            margin: 0.5rem;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #3730a3;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-tag {
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .warning {
+            background: #fef3cd;
+            border: 1px solid #fbbf24;
+            color: #92400e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .contact {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Event Management Portal</h1>
+            <p>Comprehensive web-based solution for educational institutions</p>
+        </div>
+        
+        <div class="card">
+            <h2>🚨 Important Notice</h2>
+            <div class="warning">
+                <strong>⚠️ PHP Application Notice:</strong> This Event Management Portal is a PHP-based application that requires a web server environment (Apache/Nginx) with PHP support. GitHub Pages only hosts static content (HTML/CSS/JS), so the full application cannot run directly here.
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🎓</div>
+                <h3>Student Features</h3>
+                <p>Event suggestions, IRA registration, status tracking with professional dashboard interface.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👨‍💼</div>
+                <h3>Admin Features</h3>
+                <p>Complete event management, IRA slot creation, faculty assignment, and system oversight.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👩‍🏫</div>
+                <h3>Faculty Features</h3>
+                <p>Student evaluation, assessment dashboard, performance tracking and feedback submission.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🔐 Test Credentials</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <div class="credentials">
+                    <h4>👨‍💼 Admin Access</h4>
+                    <p><strong>Email:</strong> admin@college.edu</p>
+                    <p><strong>Password:</strong> admin123</p>
+                </div>
+                
+                <div class="credentials">
+                    <h4>👩‍🏫 Faculty Access</h4>
+                    <p><strong>Email:</strong> faculty@college.edu</p>
+                    <p><strong>Password:</strong> faculty123</p>
+                </div>
+                
+                <div class="credentials">
+                    <h4>👨‍🎓 Student Access</h4>
+                    <p><strong>Email:</strong> student@college.edu</p>
+                    <p><strong>Password:</strong> student123</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🛠️ Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">PHP 8.x</span>
+                <span class="tech-tag">SQLite Database</span>
+                <span class="tech-tag">HTML5 & CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Apache Server</span>
+                <span class="tech-tag">Role-based Auth</span>
+                <span class="tech-tag">File Upload</span>
+                <span class="tech-tag">Responsive Design</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🚀 How to Run This Project</h2>
+            <h3>Option 1: Local XAMPP Setup</h3>
+            <ol style="margin: 1rem 0; padding-left: 2rem;">
+                <li>Install XAMPP on your computer</li>
+                <li>Clone the repository to <code>xampp/htdocs/</code></li>
+                <li>Start Apache server from XAMPP Control Panel</li>
+                <li>Visit <code>http://localhost/Event_Management_Portal/login.php</code></li>
+            </ol>
+            
+            <h3>Option 2: Professional Hosting</h3>
+            <p>Deploy to any PHP hosting service that supports:</p>
+            <ul style="margin: 1rem 0; padding-left: 2rem;">
+                <li>PHP 8.0 or higher</li>
+                <li>SQLite support</li>
+                <li>File upload permissions</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📋 System Workflow</h2>
+            <ol style="padding-left: 2rem;">
+                <li><strong>Students</strong> suggest events from KnowaFest that would benefit the college</li>
+                <li><strong>Admin</strong> reviews suggestions and decides if IRA is required</li>
+                <li><strong>Admin</strong> creates time slots and assigns faculty for evaluation</li>
+                <li><strong>Students</strong> register for available IRA slots</li>
+                <li><strong>Faculty</strong> evaluate students during assigned time slots</li>
+                <li><strong>System</strong> tracks all activities and provides comprehensive reporting</li>
+            </ol>
+        </div>
+        
+        <div style="text-align: center; margin: 2rem 0;">
+            <a href="https://github.com/salmaanit26/Event_Management_Portal" class="btn">
+                📁 View Source Code
+            </a>
+            <a href="https://github.com/salmaanit26/Event_Management_Portal/archive/refs/heads/main.zip" class="btn btn-secondary">
+                📥 Download Project
+            </a>
+        </div>
+        
+        <div class="contact">
+            <h2>📧 Contact Information</h2>
+            <p><strong>Developer:</strong> Arsalan</p>
+            <p><strong>Email:</strong> arsalmaan123@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/salmaanit26" style="color: #fbbf24;">@salmaanit26</a></p>
+        </div>
+    </div>
+</body>
+</html>
